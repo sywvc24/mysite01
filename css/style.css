@@ -875,7 +875,7 @@ main {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .4);
 }
 
 .slideshow .bgImg {
@@ -943,6 +943,7 @@ main {
     position: absolute;
     left: 2vw;
     top: 55%;
+    z-index: 3;
 }
 
 .catch-copy p span {
