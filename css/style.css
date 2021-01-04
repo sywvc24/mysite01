@@ -497,21 +497,21 @@ loading用
     left: 0%;
     top: 0%;
     animation: rotate-one 1s linear infinite;
-    border-bottom: 3px solid #5b7e91;
+    border-bottom: 3px solid #1a0b08;
 }
 
 .spinner.ls-two {
     right: 0%;
     top: 0%;
     animation: rotate-two 1s linear infinite;
-    border-right: 3px solid #5b7e91;
+    border-right: 3px solid #1a0b08;
 }
 
 .spinner.ls-three {
     right: 0%;
     bottom: 0%;
     animation: rotate-three 1s linear infinite;
-    border-top: 3px solid #5b7e91;
+    border-top: 3px solid #1a0b08;
 }
 
 @keyframes rotate-one {
@@ -748,10 +748,6 @@ header .right-block {
     header .inner {
         height: 90px;
     }
-
-    /*header h1 {
-    width: 130px;
-}*/
 }
 
 
@@ -992,7 +988,7 @@ main {
     transform: scaleX(0);
     transform-origin: 0 50%;
     animation-name: text-revealer;
-    background: #5b7e91;
+    background: #e3dfdc;
 }
 
 @keyframes clip-text {
@@ -1063,7 +1059,6 @@ main {
     content: "";
     right: 0;
     bottom: 0;
-    -webkit-animation: scrollBar 3s ease infinite;
     animation: scrollBar 3s ease infinite;
 }
 
@@ -1252,7 +1247,6 @@ h3 {
 
 .ttl-anim span:first-of-type {
     vertical-align: top;
-    color: #5b7e91;
 }
 
 .movingLetter span:first-of-type {
