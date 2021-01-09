@@ -599,11 +599,8 @@ header .right-block {
     font-weight: 500;
 }
 
-/*sns block*/
 .sns-block ul {
     display: flex;
-    /*justify-content: center;
-    align-items: center;*/
 }
 
 .sns-block ul li {
@@ -614,8 +611,6 @@ header .right-block {
 .sns-block p {
     margin-bottom: 5px;
 }
-
-/*tel-btn*/
 
 .tel-btn {
     position: relative;
@@ -680,7 +675,6 @@ header .right-block {
     cursor: pointer;
 }
 
-/* 表示された時用のCSS */
 .nav-open .global-nav {
     right: 0;
 }
@@ -974,7 +968,6 @@ main {
     animation-duration: .8s;
     animation-fill-mode: both;
     animation-timing-function: cubic-bezier(.23, 1, .32, 1);
-    /* easeOutQuint */
 }
 
 .reveal-text span::after {
@@ -1317,7 +1310,6 @@ h3 {
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(.23, 1, .32, 1);
-    /* easeOutQuint */
 }
 
 #concept .img-move::before,
@@ -1377,7 +1369,6 @@ h3 {
 }
 
 .fadeIn {
-    /* easeOutQuart */
     animation: fadeIn .8s cubic-bezier(.165, .84, .44, 1) forwards;
 }
 
@@ -1819,8 +1810,8 @@ footer .l-box {
 .arrow_up {
     width: 10px;
     height: 10px;
-    border-top: 3px solid #1a0b08;
-    border-right: 3px solid #1a0b08;
+    border-top: 2px solid #1a0b08;
+    border-right: 2px solid #1a0b08;
     transform: rotate(-45deg);
 }
 
