@@ -61,27 +61,21 @@ if (touch) { // remove all :hover stylesheets
 
 
 /**
- * loading
+ * animation
  *
  */
-const loader = document.getElementById('js-loader');
-const catchphrase = document.getElementById('catchphrase');
-window.addEventListener('load', () => {
-    const ms = 400;
-    loader.style.transition = 'opacity ' + ms + 'ms';
+const tl = gsap.timeline();
 
-    const loaderOpacity = function () {
-        loader.style.opacity = 0;
-    }
-    const loaderDisplay = function () {
-        loader.style.display = 'none';
-    }
-
-    const movingText = function () {
-        catchphrase.classList.add('reveal-text');
-    }
-
-    setTimeout(loaderOpacity, 1000);
-    setTimeout(loaderDisplay, 1000 + ms);
-    setTimeout(movingText, 1000 + ms + 100);
-});
+tl.to('.slideshow', {
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out'
+    })
+    .set('.catch-copy', {
+        className: "+=reveal-text"
+    })
+    .to('.scroll-down', {
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out'
+    });
