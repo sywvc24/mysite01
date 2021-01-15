@@ -2,7 +2,7 @@ const tl = gsap.timeline();
 
 tl.to('.slideshow', {
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         ease: 'power1.out'
     })
     .set('.catch-copy', {
