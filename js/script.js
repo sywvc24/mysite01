@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
         })
         .to('.slideshow', {
             opacity: 1,
-            duration: 0.8,
+            duration: 1,
             ease: 'power2.out'
         })
         .set('.catch-copy', {
