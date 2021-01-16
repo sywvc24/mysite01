@@ -1,15 +1,15 @@
 const tl = gsap.timeline();
 
-tl.to('.slideshow', {
+tl.to(".slideshow", {
         opacity: 1,
         duration: 1.2,
-        ease: 'power1.out'
+        ease: "power2.out"
     })
-    .set('.catch-copy', {
-        className: '+=reveal-text'
+    .set(".catch-copy", {
+        className: "+=reveal-text"
     })
-    .to('.scroll-down', {
+    .to(".scroll-down", {
         opacity: 1,
-        duration: 0.8,
-        ease: 'power1.out'
+        duration: 1,
+        ease: "power2.out"
     });
