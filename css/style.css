@@ -402,7 +402,6 @@ main {
 /*
 文字
 ---------------------------------*/
-
 .en {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -542,7 +541,6 @@ header .right-block {
 /*
 ハンバーガー
 ---------------------------------*/
-
 .hamburger {
     position: relative;
     width: 40px;
@@ -657,7 +655,6 @@ header .right-block {
 
 
 @media screen and (min-width: 960px) {
-
     .nav-inner {
         width: 100%;
         margin: 0;
@@ -736,7 +733,6 @@ header .right-block {
     }
 }
 
-
 /*---------------------------------
 
 メインビジュアル
@@ -761,7 +757,7 @@ main {
     opacity: 0;
 }
 
-.slideshow {
+.slideshow, .slide-block {
     position: absolute;
     top: 0;
     right: 0;
@@ -770,6 +766,11 @@ main {
     overflow: hidden;
     width: 86%;
     height: calc(100% - 21.875vw);
+}
+
+.slide-block {
+    background: #fff5e0;
+    z-index: 5;
 }
 
 .slideshow::before {
@@ -812,7 +813,6 @@ main {
     animation-delay: 10s;
 }
 
-
 @keyframes imageAnimation {
     0% {
         opacity: 0;
@@ -840,9 +840,7 @@ main {
     }
 }
 
-
 /* catchCopy*/
-
 .catch-copy {
     opacity: 0;
 }
@@ -1007,7 +1005,7 @@ main {
         height: calc(100vh - 90px);
     }
 
-    .slideshow {
+    .slideshow, .slide-block {
         width: 86%;
         height: 86%;
     }
@@ -1033,7 +1031,7 @@ main {
 
 @media screen and (min-width: 960px) {
 
-    .slideshow {
+    .slideshow, .slide-block {
         max-width: 1779px;
         max-height: 1186px;
         width: 84%;
