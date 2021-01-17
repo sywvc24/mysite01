@@ -6,7 +6,7 @@ tl.to('.h-inner', {
         ease: 'power2.out'
     })
     .to('.slide-block', {
-        opacity: 0,
+        width: 0,
         duration: 0.8,
         ease: 'power2.out'
     })
