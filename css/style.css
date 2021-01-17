@@ -757,7 +757,7 @@ main {
     opacity: 0;
 }
 
-.slideshow, .slide-block {
+.slideshow {
     position: absolute;
     top: 0;
     right: 0;
@@ -766,11 +766,6 @@ main {
     overflow: hidden;
     width: 86%;
     height: calc(100% - 21.875vw);
-}
-
-.slide-block {
-    background: #fff5e0;
-    z-index: 5;
 }
 
 .slideshow::before {
@@ -1005,7 +1000,7 @@ main {
         height: calc(100vh - 90px);
     }
 
-    .slideshow, .slide-block {
+    .slideshow {
         width: 86%;
         height: 86%;
     }
@@ -1031,7 +1026,7 @@ main {
 
 @media screen and (min-width: 960px) {
 
-    .slideshow, .slide-block {
+    .slideshow {
         max-width: 1779px;
         max-height: 1186px;
         width: 84%;
