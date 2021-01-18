@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body id="top">
     <div id="wrapper">
         <header id="header">
@@ -65,44 +64,42 @@
                             </div>
                         </div>
                     </nav>
-
                     <div class="hamburger sp-only" id="js-hamburger">
                         <span class="hamburger__line hamburger__line--1"></span>
                         <span class="hamburger__line hamburger__line--2"></span>
                         <span class="hamburger__line hamburger__line--3"></span>
                     </div>
                 </div>
-
                 <div class="black-bg" id="js-black-bg"></div>
             </div>
         </header>
 
         <main class="main">
-
             <div id="mainVisual">
                 <div class="inner">
-
                     <div class="slideshow crystal-clear">
                         <div class="bgImg slide1"></div>
                         <div class="bgImg slide2"></div>
                         <div class="bgImg slide3"></div>
                     </div>
-
                     <div class="catch-copy">
                         <p><span>私らしく、キレイの先へ</span></p>
                         <p><span class="en">Always be yourself</span></p>
                     </div>
-
                     <div class="scroll-down crystal-clear">
                         <div class="scroll-line"></div>
                     </div>
-
                 </div>
             </div>
 
             <section id="concept" class="first-img odd-section">
                 <div class="inner">
-                    <div class="image-wrap img-anim waypoint"><img src="img/concept.jpg" alt="ヘアーサロンアザリスの店内画像"></div>
+                    <div class="image-wrap img-anim waypoint">
+                        <picture>
+                            <source data-srcset="img/webp/concept.webp" type="image/webp" />
+                            <img class="lazyload" src="img/placeholder/image.png" data-src="img/concept.jpg" alt="ヘアーサロンアザリスの店内画像" />
+                        </picture>
+                    </div>
                     <div class="l-box">
                         <h2 class="ttl-anim en waypoint"><span>&mdash;</span><span>C</span><span>O</span><span>N</span><span>C</span><span>E</span><span>P</span><span>T</span></h2>
                         <div class="s-box">
@@ -116,7 +113,12 @@
 
             <section id="menu" class="first-img even-section">
                 <div class="inner">
-                    <div class="image-wrap img-anim waypoint"><img src="img/menu.jpg" alt="美容師が髪をカットしている画像"></div>
+                    <div class="image-wrap img-anim waypoint">
+                       <picture>
+                            <source data-srcset="img/webp/menu.webp" type="image/webp" />
+                            <img class="lazyload" src="img/placeholder/image.png" data-src="img/menu.jpg" alt="美容師が髪をカットしている画像" />
+                        </picture> 
+                    </div>
                     <div class="l-box">
                         <h2 class="ttl-anim en waypoint"><span>&mdash;</span><span>M</span><span>E</span><span>N</span><span>U</span></h2>
                         <div class="s-box">
@@ -153,7 +155,12 @@
             <section id="access" class="first-img odd-section">
                 <div class="inner">
                     <div class="pc-box">
-                        <div class="image-wrap img-anim waypoint"><img src="img/access.jpg" alt="ヘアーサロンアザリスの外観画像"></div>
+                        <div class="image-wrap img-anim waypoint">
+                            <picture>
+                                <source data-srcset="img/webp/access.webp" type="image/webp" />
+                                <img class="lazyload" src="img/placeholder/image.png" data-src="img/access.jpg" alt="ヘアーサロンアザリスの外観画像" />
+                            </picture>
+                        </div>
                         <div class="l-box">
                             <h2 class="ttl-anim en waypoint"><span>&mdash;</span><span>A</span><span>C</span><span>C</span><span>E</span><span>S</span><span>S</span></h2>
                             <div class="s-box">
@@ -161,7 +168,7 @@
                                     <div class="line">
                                         <dt>住所</dt>
                                         <dd>横浜市港北区大倉山1-2-3 A・Bビル2F</dd>
-                                        <dd class="xs">※大倉山駅北口徒歩2分</dd>
+                                        <dd class="xs">※大倉山駅徒歩2分</dd>
                                     </div>
                                     <div class="line">
                                         <dt>電話</dt>
@@ -189,8 +196,18 @@
             <section id="style" class="first-img grey">
                 <div class="inner">
                     <div class="hair-style">
-                        <div class="left-wrap img-anim waypoint"><img src="img/style01.jpg" alt="ミディアム、パーマ、ウェーブの女性の髪形"></div>
-                        <div class="right-wrap img-anim waypoint"><img src="img/style02.jpg" alt="ボブの女性の髪形"></div>
+                        <div class="left-wrap img-anim waypoint">
+                            <picture>
+                                <source data-srcset="img/webp/style01.webp" type="image/webp" />
+                                <img class="lazyload" src="img/placeholder/image.png" data-src="img/style01.jpg" alt="ミディアム、パーマ、ウェーブの女性" />
+                            </picture>
+                        </div>
+                        <div class="right-wrap img-anim waypoint">
+                            <picture>
+                                <source data-srcset="img/webp/style02.webp" type="image/webp" />
+                                <img class="lazyload" src="img/placeholder/image.png" data-src="img/style02.jpg" alt="ショートボブの女性" />
+                            </picture>
+                        </div>
                     </div>
                     <div class="l-box">
                         <h2 class="ttl-anim en waypoint"><span>&mdash;</span><span>S</span><span>T</span><span>Y</span><span>L</span><span>E</span></h2>
@@ -213,7 +230,10 @@
                             <ul>
                                 <li class="cont-img waypoint">
                                     <div class="staff-intro">
-                                        <img src="img/staff01.jpg" alt="">
+                                        <picture>
+                                            <source data-srcset="img/webp/staff01.webp" type="image/webp" />
+                                            <img class="lazyload" src="img/placeholder/image.png" data-src="img/staff01.jpg" alt="" />
+                                        </picture>
                                         <div class="name">
                                             <p class="en small">Shou Tooyama</p>
                                             <p class="jp-name bold">遠山翔</p>
@@ -225,7 +245,10 @@
                                 </li>
                                 <li class="cont-img waypoint">
                                     <div class="staff-intro">
-                                        <img src="img/staff02.jpg" alt="">
+                                        <picture>
+                                            <source data-srcset="img/webp/staff02.webp" type="image/webp" />
+                                            <img class="lazyload" src="img/placeholder/image.png" data-src="img/staff02.jpg" alt="" />
+                                        </picture>
                                         <div class="name">
                                             <p class="en small">Takuma Suzuki</p>
                                             <p class="jp-name bold">鈴木琢磨</p>
@@ -237,7 +260,10 @@
                                 </li>
                                 <li class="cont-img waypoint">
                                     <div class="staff-intro">
-                                        <img src="img/staff03.jpg" alt="">
+                                        <picture>
+                                            <source data-srcset="img/webp/staff03.webp" type="image/webp" />
+                                            <img class="lazyload" src="img/placeholder/image.png" data-src="img/staff03.jpg" alt="" />
+                                        </picture>
                                         <div class="name">
                                             <p class="en small">Haruka Kohinata</p>
                                             <p class="jp-name bold">小日向遥</p>
@@ -262,7 +288,10 @@
                                 <li class="cont-img waypoint">
                                     <div class="blog-block">
                                         <a href="" class="pc-hover">
-                                            <img src="img/blog01.jpg" alt="">
+                                            <picture>
+                                                <source data-srcset="img/webp/blog01.webp" type="image/webp" />
+                                                <img class="lazyload" src="img/placeholder/image.png" data-src="img/blog01.jpg" alt="" />
+                                            </picture>
                                         </a>
                                         <div class="name">
                                             <p class="xs">2020.10.07</p>
@@ -273,7 +302,10 @@
                                 <li class="cont-img waypoint">
                                     <div class="blog-block">
                                         <a href="" class="pc-hover">
-                                            <img src="img/blog02.jpg" alt="">
+                                            <picture>
+                                                <source data-srcset="img/webp/blog02.webp" type="image/webp" />
+                                                <img class="lazyload" src="img/placeholder/image.png" data-src="img/blog02.jpg" alt="" />
+                                            </picture>
                                         </a>
                                         <div class="name">
                                             <p class="xs">2020.10.02</p>
@@ -284,7 +316,10 @@
                                 <li class="cont-img waypoint">
                                     <div class="blog-block">
                                         <a href="" class="pc-hover">
-                                            <img src="img/blog03.jpg" alt="">
+                                            <picture>
+                                                <source data-srcset="img/webp/blog03.webp" type="image/webp" />
+                                                <img class="lazyload" src="img/placeholder/image.png" data-src="img/blog03.jpg" alt="" />
+                                            </picture>
                                         </a>
                                         <div class="name">
                                             <p class="xs">2020.09.24</p>
@@ -324,12 +359,10 @@
     </div> <!-- wrapper -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"></script>
     <script src="js/common.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
     <script src="js/io.js"></script>
+    <script src="js/lazysizes.min.js"></script>
 </body>
-
-
 </html>
