@@ -1,7 +1,3 @@
-/**
- * Intersection Observer
- * scroll-animation
- */
 const iSObservers = document.querySelectorAll('.waypoint');
 const options = {
     threshold: 0.3
