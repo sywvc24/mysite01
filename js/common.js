@@ -1,7 +1,3 @@
-/**
- * drawer
- *
- */
 const body = document.body;
 const hamburger = document.getElementById('js-hamburger');
 const blackBg = document.getElementById('js-black-bg');
@@ -21,10 +17,7 @@ menuList.addEventListener('click', (e) => {
     }
 });
 
-/**
- * smooth-scroll
- *
- */
+
 const scroll = new SmoothScroll('a[href*="#"]', {
     header: '#header',
     speedAsDuration: true,
@@ -32,10 +25,7 @@ const scroll = new SmoothScroll('a[href*="#"]', {
     easing: 'easeInOutQuint'
 });
 
-/**
- * hover
- *
- */
+
 const touch = 'ontouchstart' in document.documentElement ||
     navigator.maxTouchPoints > 0 ||
     navigator.msMaxTouchPoints > 0;
@@ -57,10 +47,7 @@ if (touch) { // remove all :hover stylesheets
     } catch (ex) {}
 }
 
-/**
- * gsap
- *
- */
+
 const tl = gsap.timeline();
 window.addEventListener('load', () => {
     tl.to('.h-inner', {
