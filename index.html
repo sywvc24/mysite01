@@ -23,6 +23,7 @@
             document.getElementsByTagName("head")[0].appendChild(script);
         }
         if (document.documentMode && document.uniqueID) {
+            addScript("https://polyfill.io/v3/polyfill.min.js?features=es6");
             addScript("https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver");
             addScript("https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js");
         }
