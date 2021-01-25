@@ -58,6 +58,11 @@ window.addEventListener('load', () => {
         .to('.loader', {
             display: 'none'
         })
+        .to('.h-inner', {
+            opacity: 1,
+            duration: 0.2,
+            ease: 'power2.out'
+        })
         .to('.slideshow', {
             opacity: 1,
             duration: 0.8,
