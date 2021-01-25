@@ -50,10 +50,13 @@ if (touch) { // remove all :hover stylesheets
 
 const tl = gsap.timeline();
 window.addEventListener('load', () => {
-    tl.to('.h-inner', {
-            opacity: 1,
+    tl.to('.loading-inner', {
+            opacity: 0,
             duration: 0.4,
             ease: 'power2.out'
+        })
+        .to('.loader', {
+            display: 'none'
         })
         .to('.slideshow', {
             opacity: 1,
