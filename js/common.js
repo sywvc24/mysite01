@@ -52,7 +52,7 @@ const tl = gsap.timeline();
 window.addEventListener('load', () => {
     tl.to('.loading-inner', {
             opacity: 0,
-            duration: 0.5,
+            duration: 0.6,
             ease: 'power2.out'
         })
         .to('.loader', {
@@ -65,7 +65,7 @@ window.addEventListener('load', () => {
         })
         .to('.slideshow', {
             opacity: 1,
-            duration: 0.8,
+            duration: 0.6,
             ease: 'power2.out'
         })
         .set('.catch-copy', {
