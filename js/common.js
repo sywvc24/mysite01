@@ -52,7 +52,7 @@ const tl = gsap.timeline();
 window.addEventListener('load', () => {
     tl.to('.loading-inner', {
             opacity: 0,
-            duration: 0.4,
+            duration: 0.5,
             ease: 'power2.out'
         })
         .to('.loader', {
