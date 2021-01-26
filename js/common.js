@@ -49,7 +49,7 @@ if (touch) { // remove all :hover stylesheets
 
 
 const tl = gsap.timeline();
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
     tl.to('.loading-inner', {
             opacity: 0,
             duration: 0.1,
