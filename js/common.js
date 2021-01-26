@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
         })
         .to('.scroll-down', {
             opacity: 1,
-            duration: 0.4,
+            duration: 0.3,
             ease: 'power2.out'
         })
 });
