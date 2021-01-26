@@ -58,7 +58,6 @@ window.addEventListener('load', () => {
         })
         .to('.loader', {
             display: 'none',
-            delay: 0.1
         })
         .to('.slideshow', {
             opacity: 1,
