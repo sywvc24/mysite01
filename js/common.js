@@ -57,12 +57,8 @@ window.addEventListener('load', () => {
             ease: 'power2.out'
         })
         .to('.loader', {
-            display: 'none'
-        })
-        .to('.h-inner', {
-            opacity: 1,
-            duration: 0.2,
-            ease: 'power2.out'
+            display: 'none',
+            delay: 0.1
         })
         .to('.slideshow', {
             opacity: 1,
