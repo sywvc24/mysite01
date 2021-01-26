@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
             opacity: 0,
             duration: 0.1,
             delay: 2,
-            ease: 'power2.out'
+            ease: 'power2.inOut'
         })
         .to('.loader', {
             display: 'none',
@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
         })
         .to('.scroll-down', {
             opacity: 1,
-            duration: 0.3,
+            duration: 0.4,
             ease: 'power2.out'
         })
 });
