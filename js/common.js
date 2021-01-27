@@ -61,7 +61,7 @@ window.addEventListener('load', () => {
         })
         .to('.slideshow', {
             opacity: 1,
-            duration: 0.6,
+            duration: 0.4,
             ease: 'power2.out'
         })
         .set('.catch-copy', {
