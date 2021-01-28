@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', () => {
     tl.to('.loading-inner', {
             opacity: 0,
             duration: 0.1,
-            delay: 2,
+            delay: 2.3,
             ease: 'power2.inOut'
         })
         .to('.loader', {
