@@ -2,21 +2,17 @@ const body = document.body;
 const hamburger = document.getElementById('js-hamburger');
 const blackBg = document.getElementById('js-black-bg');
 const menuList = document.getElementById('indexList');
-
 hamburger.addEventListener('click', (e) => {
     body.classList.toggle('nav-open');
 });
-
 blackBg.addEventListener('click', (e) => {
     body.classList.remove('nav-open');
 });
-
 menuList.addEventListener('click', (e) => {
     if (body.classList.contains('nav-open')) {
         body.classList.remove('nav-open');
     }
 });
-
 
 const scroll = new SmoothScroll('a[href*="#"]', {
     header: '#header',
@@ -25,13 +21,12 @@ const scroll = new SmoothScroll('a[href*="#"]', {
     easing: 'easeInOutQuint'
 });
 
-
 const touch = 'ontouchstart' in document.documentElement ||
     navigator.maxTouchPoints > 0 ||
     navigator.msMaxTouchPoints > 0;
 
-if (touch) { // remove all :hover stylesheets
-    try { // prevent exception on browsers not supporting DOM styleSheets properly
+if (touch) { 
+    try { 
         for (var si in document.styleSheets) {
             const styleSheet = document.styleSheets[si];
             if (!styleSheet.rules) continue;
@@ -46,7 +41,6 @@ if (touch) { // remove all :hover stylesheets
         }
     } catch (ex) {}
 }
-
 
 const tl = gsap.timeline();
 window.addEventListener('DOMContentLoaded', () => {
@@ -74,12 +68,10 @@ window.addEventListener('DOMContentLoaded', () => {
         })
 });
 
-
 const iSObservers = document.querySelectorAll('.waypoint');
 const options = {
     threshold: 0.3
 };
-
 const inView = (target) => {
     if (target.classList.contains('img-anim')) {
         target.classList.add('img-move');
@@ -89,7 +81,6 @@ const inView = (target) => {
         target.classList.add('fadeIn');
     }
 };
-
 const observeUse = (entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -97,7 +88,6 @@ const observeUse = (entries) => {
         }
     });
 };
-
 const observer = new IntersectionObserver(observeUse, options);
 iSObservers.forEach(iSObserver => {
     observer.observe(iSObserver);
