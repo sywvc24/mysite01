@@ -75,6 +75,12 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+ window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            header.classList.toggle("scroll-nav", window.scrollY > 0);
+        });
+
+
 const iSObservers = document.querySelectorAll('.waypoint');
 const options = {
     threshold: 0.3
