@@ -1,18 +1,13 @@
 @charset "UTF-8";
+
 /*!
 * ress.css ? v2.0.2
 * MIT License
 * github.com/filipelinhares/ress
 */
-
-/* # =================================================================
-# Global selectors
-# ================================================================= */
-
 html {
     box-sizing: border-box;
     -webkit-text-size-adjust: 100%;
-    /* Prevent adjustments of font size after orientation changes in iOS */
     word-break: break-word;
     -moz-tab-size: 4;
     tab-size: 4;
@@ -22,72 +17,55 @@ html {
 ::before,
 ::after {
     background-repeat: no-repeat;
-    /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
     box-sizing: inherit;
 }
 
 ::before,
 ::after {
     text-decoration: inherit;
-    /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
     vertical-align: inherit;
 }
 
 * {
     padding: 0;
-    /* Reset `padding` and `margin` of all elements */
     margin: 0;
 }
 
-/* # =================================================================
-# General elements
-# ================================================================= */
-
 hr {
     overflow: visible;
-    /* Show the overflow in Edge and IE */
     height: 0;
-    /* Add the correct box sizing in Firefox */
 }
 
 details,
 main {
     display: block;
-    /* Render the `main` element consistently in IE. */
 }
 
 summary {
     display: list-item;
-    /* Add the correct display in all browsers */
 }
 
 small {
     font-size: 80%;
-    /* Set font-size to 80% in `small` elements */
 }
 
 [hidden] {
     display: none;
-    /* Add the correct display in IE */
 }
 
 abbr[title] {
     border-bottom: none;
-    /* Remove the bottom border in Chrome 57 */
-    /* Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari */
     text-decoration: underline;
     text-decoration: underline dotted;
 }
 
 a {
     background-color: transparent;
-    /* Remove the gray background on active links in IE 10 */
 }
 
 a:active,
 a:hover {
     outline-width: 0;
-    /* Remove the outline when hovering in all browsers */
 }
 
 code,
@@ -95,21 +73,17 @@ kbd,
 pre,
 samp {
     font-family: monospace, monospace;
-    /* Specify the font family of code elements */
 }
 
 pre {
     font-size: 1em;
-    /* Correct the odd `em` font sizing in all browsers */
 }
 
 b,
 strong {
     font-weight: bolder;
-    /* Add the correct font weight in Chrome, Edge, and Safari */
 }
 
-/* https://gist.github.com/unruthless/413930 */
 sub,
 sup {
     font-size: 75%;
@@ -126,15 +100,10 @@ sup {
     top: -0.5em;
 }
 
-/* # =================================================================
-# Forms
-# ================================================================= */
-
 input {
     border-radius: 0;
 }
 
-/* Replace pointer cursor in disabled elements */
 [disabled] {
     cursor: default;
 }
@@ -142,26 +111,20 @@ input {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
     height: auto;
-    /* Correct the cursor style of increment and decrement buttons in Chrome */
 }
 
 [type="search"] {
     -webkit-appearance: textfield;
-    /* Correct the odd appearance in Chrome and Safari */
     outline-offset: -2px
-        /* Correct the outline style in Safari */
 }
 
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
-    /* Remove the inner padding in Chrome and Safari on macOS */
 }
 
 textarea {
     overflow: auto;
-    /* Internet Explorer 11+ */
     resize: vertical;
-    /* Specify textarea resizability */
 }
 
 button,
@@ -170,26 +133,21 @@ optgroup,
 select,
 textarea {
     font: inherit;
-    /* Specify font inheritance of form elements */
 }
 
 optgroup {
     font-weight: bold;
-    /* Restore the font weight unset by the previous rule */
 }
 
 button {
     overflow: visible;
-    /* Address `overflow` set to `hidden` in IE 8/9/10/11 */
 }
 
 button,
 select {
     text-transform: none;
-    /* Firefox 40+, Internet Explorer 11- */
 }
 
-/* Apply cursor pointer to button elements */
 button,
 [type="button"],
 [type="reset"],
@@ -199,7 +157,6 @@ button,
     color: inherit;
 }
 
-/* Remove inner padding and border in Firefox 4+ */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -208,7 +165,6 @@ button::-moz-focus-inner,
     padding: 0;
 }
 
-/* Replace focus style removed in the border reset above */
 button:-moz-focusring,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -218,14 +174,11 @@ button:-moz-focusring,
 
 button,
 html [type="button"],
-/* Prevent a WebKit bug where (2) destroys native `audio` and `video`controls in Android 4 */
 [type="reset"],
 [type="submit"] {
     -webkit-appearance: button;
-    /* Correct the inability to style clickable types in iOS */
 }
 
-/* Remove the default button styling in all browsers */
 button,
 input,
 select,
@@ -234,57 +187,38 @@ textarea {
     border-style: none;
 }
 
-/* Style select like a standard input */
 select {
     -moz-appearance: none;
-    /* Firefox 36+ */
     -webkit-appearance: none;
-    /* Chrome 41+ */
 }
 
 select::-ms-expand {
     display: none;
-    /* Internet Explorer 11+ */
 }
 
 select::-ms-value {
     color: currentColor;
-    /* Internet Explorer 11+ */
 }
 
 legend {
     border: 0;
-    /* Correct `color` not being inherited in IE 8/9/10/11 */
     color: inherit;
-    /* Correct the color inheritance from `fieldset` elements in IE */
     display: table;
-    /* Correct the text wrapping in Edge and IE */
     max-width: 100%;
-    /* Correct the text wrapping in Edge and IE */
     white-space: normal;
-    /* Correct the text wrapping in Edge and IE */
     max-width: 100%;
-    /* Correct the text wrapping in Edge 18- and IE */
 }
 
 ::-webkit-file-upload-button {
-    /* Correct the inability to style clickable types in iOS and Safari */
     -webkit-appearance: button;
     color: inherit;
     font: inherit;
-    /* Change font properties to `inherit` in Chrome and Safari */
 }
-
-/* # =================================================================
-# Specify media element style
-# ================================================================= */
 
 img {
     border-style: none;
-    /* Remove border when inside `a` element in IE 8/9/10 */
 }
 
-/* Add the correct vertical alignment in Chrome, Firefox, and Opera */
 progress {
     vertical-align: baseline;
 }
@@ -293,11 +227,6 @@ svg:not([fill]) {
     fill: currentColor;
 }
 
-/* # =================================================================
-# Accessibility
-# ================================================================= */
-
-/* Hide content from screens but not screenreaders */
 @media screen {
     [hidden ~ ="screen"] {
         display: inherit;
@@ -309,26 +238,18 @@ svg:not([fill]) {
     }
 }
 
-/* Specify the progress cursor of updating elements */
 [aria-busy="true"] {
     cursor: progress;
 }
 
-/* Specify the pointer cursor of trigger elements */
 [aria-controls] {
     cursor: pointer;
 }
 
-/* Specify the unstyled cursor of disabled, not-editable, or otherwise inoperable elements */
 [aria-disabled] {
     cursor: default;
 }
 
-/*---------------------------------
-
-共通
-
----------------------------------*/
 html {
     font-size: 62.5%;
 }
@@ -395,13 +316,7 @@ img {
 
 main {
     display: block;
-    padding: 0;
-    margin: 0;
 }
-
-/*
-文字
----------------------------------*/
 
 .en {
     font-family: 'Josefin Sans', sans-serif;
@@ -456,13 +371,6 @@ dl,
         font-size: 1.3rem;
     }
 }
-
-
-/*---------------------------------
-
-loading用
-
----------------------------------*/
 
 .loader {
     width: 100vw;
@@ -519,12 +427,6 @@ loading用
     animation: logoSvg 2.3s ease-out forwards;
 }
 
-
-/*---------------------------------
-
-header
-
----------------------------------*/
 header {
     width: 100vw;
     height: 21.875vw;
@@ -587,15 +489,6 @@ header .right-block {
 }
 
 .tel-btn {
-    /* position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25rem;
-    height: 4rem;
-    border: 1px solid #1a0b08;
-    text-decoration: none;
-    margin: 3rem auto 0;*/
     text-decoration: underline;
     margin: 30px 0 10px;
 }
@@ -603,10 +496,6 @@ header .right-block {
 header.scroll-nav {
     height: 60px;
 }
-
-/*
-ハンバーガー
----------------------------------*/
 
 .hamburger {
     position: relative;
@@ -675,17 +564,6 @@ header.scroll-nav {
     top: 20px;
 }
 
-.scroll-prevent {
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
-
-
-/*
-グロナビ
----------------------------------*/
 .global-nav {
     position: fixed;
     right: -320px;
@@ -728,7 +606,6 @@ header.scroll-nav {
         height: 90px;
     }
 }
-
 
 @media screen and (min-width: 960px) {
     header .logo {
@@ -815,12 +692,6 @@ header.scroll-nav {
     }
 }
 
-
-/*---------------------------------
-
-メインビジュアル
-
----------------------------------*/
 main {
     padding-top: 21.875vw;
 }
@@ -891,7 +762,6 @@ main {
     animation-delay: 10s;
 }
 
-
 @keyframes imageAnimation {
     0% {
         opacity: 0;
@@ -919,8 +789,6 @@ main {
     }
 }
 
-
-/* catchCopy*/
 .catch-copy {
     opacity: 0;
 }
@@ -989,7 +857,6 @@ main {
     }
 }
 
-
 @keyframes text-revealer {
 
     0%,
@@ -1011,9 +878,6 @@ main {
         transform: scaleX(0);
     }
 }
-
-
-/*        下向き矢印*/
 
 .scroll-down {
     position: absolute;
@@ -1047,7 +911,6 @@ main {
     bottom: 0;
     animation: scrollBar 3s ease infinite;
 }
-
 
 @keyframes scrollBar {
     0% {
@@ -1110,7 +973,6 @@ main {
 }
 
 @media screen and (min-width: 960px) {
-
     .slideshow {
         max-width: 1779px;
         max-height: 1186px;
@@ -1143,10 +1005,6 @@ main {
     }
 }
 
-
-/*
-コンテンツ共通
----------------------------------*/
 section {
     width: 100vw;
     padding-bottom: 30vw;
@@ -1221,8 +1079,6 @@ h3 {
     }
 }
 
-/*h2アニメーション*/
-
 .ttl-anim span {
     position: relative;
     display: inline-block;
@@ -1279,9 +1135,6 @@ h3 {
     }
 }
 
-
-/*画像アニメーション*/
-
 .img-anim {
     opacity: 0;
 }
@@ -1331,7 +1184,6 @@ h3 {
     animation-name: img-wrap-b;
 }
 
-
 @keyframes img-wrap-r {
     100% {
         transform: translateX(-100%);
@@ -1356,7 +1208,6 @@ h3 {
     }
 }
 
-/*コンテンツ画像アニメーション*/
 .cont-img {
     opacity: 0;
 }
@@ -1364,7 +1215,6 @@ h3 {
 .fadeIn {
     opacity: 1;
     transition: opacity .8s cubic-bezier(.165, .84, .44, 1);
-    /*    animation: fadeIn .8s cubic-bezier(.165, .84, .44, 1) forwards;*/
 }
 
 @keyframes fadeIn {
@@ -1377,12 +1227,6 @@ h3 {
     }
 }
 
-
-/*---------------------------------
-
-concept
-
----------------------------------*/
 #concept {
     padding-top: 25vw;
 }
@@ -1396,7 +1240,6 @@ concept
         padding-top: 20vw;
     }
 }
-
 
 @media screen and (min-width: 960px) {
     #concept {
@@ -1417,15 +1260,8 @@ concept
     .odd-section .l-box {
         width: 45%;
     }
-
 }
 
-
-/*---------------------------------
-
-menu
-
----------------------------------*/
 .first-img div.line:not(:last-of-type) {
     margin-bottom: 5vw;
 }
@@ -1467,13 +1303,6 @@ menu
     }
 }
 
-
-/*---------------------------------
-
-access
-
----------------------------------*/
-
 #access dd {
     margin-left: 25vw;
 }
@@ -1486,7 +1315,6 @@ access
     #access {
         padding-bottom: 35vw;
     }
-
 }
 
 @media screen and (min-width: 960px) {
@@ -1509,60 +1337,8 @@ access
         padding-bottom: 25vw;
 
     }
-
 }
 
-
-/*
-map
----------------------------------*/
-#map {
-    box-sizing: border-box;
-    margin: 10vw auto 0;
-    width: 80vw;
-}
-
-#map .map-inner {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    padding-top: 100%;
-}
-
-#map .map-inner iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: grayscale(90%);
-}
-
-@media screen and (min-width: 768px) {
-    #map {
-        width: 70%;
-    }
-
-    #map .map-inner {
-        padding-top: 75%;
-    }
-
-}
-
-@media screen and (min-width: 960px) {
-    #map .map-inner {
-        padding-top: 56.25%;
-    }
-
-}
-
-
-
-/*---------------------------------
-
-style
-
----------------------------------*/
 .grey {
     background: #e3dfdc;
 }
@@ -1585,7 +1361,6 @@ style
 }
 
 @media screen and (min-width: 768px) {
-
     .left-wrap {
         margin-top: -15vw;
     }
@@ -1620,11 +1395,6 @@ style
     }
 }
 
-/*---------------------------------
-
-staff
-
----------------------------------*/
 #staff .text-block br {
     display: none;
 }
@@ -1721,14 +1491,6 @@ staff
     }
 }
 
-
-
-
-/*---------------------------------
-
-blog
-
----------------------------------*/
 #blog .btn span::after {
     content: '';
     width: 6px;
@@ -1741,13 +1503,6 @@ blog
     margin-left: 5px;
 }
 
-
-
-/*---------------------------------
-
-footer
-
----------------------------------*/
 footer {
     width: 100vw;
     background: #1a1919;
@@ -1784,10 +1539,6 @@ footer .l-box {
     }
 }
 
-/*
-トップに戻るボタン
----------------------------------*/
-
 #btn-backtotop {
     position: absolute;
     bottom: 30px;
@@ -1817,12 +1568,6 @@ footer .l-box {
     }
 }
 
-
-/*---------------------------------
-
-ボタン装飾
-
----------------------------------*/
 .btn {
     position: relative;
     display: flex;
