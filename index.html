@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>ヘアーサロンアザリス</title>
+		<title>Brise Douce</title>
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<meta name="format-detection" content="telephone=no" />
@@ -11,106 +11,174 @@
 		<meta name="robots" content="noindex, nofollow" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&family=Noto+Sans+JP:wght@400&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+JP:wght@500&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="css/style.min.css" rel="stylesheet" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css"
+			rel="stylesheet"
+			media="print"
+			onload="this.media='all'"
+		/>
+		<link
+			href="css/style.min.css"
+			rel="stylesheet"
+			media="print"
+			onload="this.media='all'"
+		/>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
 			defer
 		></script>
 		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.0/smooth-scroll.min.js"
+			src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
 			defer
 		></script>
-		<script src="js/common.min.js" defer></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+			defer
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"
+			defer
+		></script>
+		<script src="js/script.js" defer></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js"
+			defer
+		></script>
+		<style>
+			.loader {
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				top: 0;
+				z-index: 999;
+			}
+			.loading-inner {
+				width: 100%;
+				height: 100%;
+				background: #ca7903;
+			}
+			#bubbles {
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+			}
+			.logo-wrap {
+				max-width: 450px;
+				width: 80%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.loading-text {
+				width: 100%;
+			}
+			.loading-text path {
+				fill: transparent;
+				stroke: #332e29;
+				stroke-width: 1;
+				opacity: 0;
+			}
+		</style>
 	</head>
-
 	<body id="top">
 		<div class="loader">
 			<div class="loading-inner">
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 304.938 121.532"
-					preserveAspectRatio="none"
-				>
-					<path
-						class="logo-p"
-						d="M83.544 80.333q-5.406-.352-8.042-3.187t-5.493-9.689L42.631 2.022h-2.022L12.924 66.753q-4.088 9.494-6.262 11.141A15.684 15.684 0 010 80.333v2.153h24.785v-2.153q-9.1-.66-9.1-4.922a19.212 19.212 0 011.934-6.856l5.361-12.392h30.454l4.747 11.294q2.328 5.536 2.329 8.085 0 4.395-8 4.791v2.153h31.025v-2.153zM24.789 51.856l13.667-31.773 13.359 31.773H24.789zm110.874-22.5H91.147L90.8 44.078h2.285q.351-5.844 2.593-8.262t9.448-2.417h17.4L87.238 80.376v2.11h46.89l.615-16.3h-1.977q-.617 9.448-4.461 10.943a24.339 24.339 0 01-8.855 1.494h-19.38l35.6-47.11V29.36zm54.448 42.231q-4.614 4.615-6.328 4.615-1.758 0-2.285-2.483a56.785 56.785 0 01-.527-9.69V46.011q0-7.338-1.121-10.635t-5.383-5.449q-4.263-2.153-11.162-2.153a25.224 25.224 0 00-13.579 3.625q-5.845 3.625-5.845 9.734 0 5.627 4.834 5.625 4.965 0 4.966-5.581l-.132-3.34a5.744 5.744 0 012.307-4.636 8.754 8.754 0 015.691-1.868q9.888 0 9.888 13.843v2.11q-13.493 4.878-20.149 9.074t-8.064 7.361A15.176 15.176 0 00145 79.41q3.186 4.175 9.471 4.174a13.922 13.922 0 006.877-1.538 104.316 104.316 0 0010.086-7.207q.087 8.7 6.24 8.7 5.932 0 12.436-8.7v-3.252zm-30.278 5.274a7.074 7.074 0 01-6.042-3.054 11.023 11.023 0 01-2.22-6.614 11.474 11.474 0 013.384-7.735q3.384-3.734 16.48-8.657V71.06q-7.209 5.8-11.6 5.8h0zm57.393-41.265q.57 0 3.735 2.022 3.207 1.977 4.57 1.977 5.1 0 5.1-5.361a5.564 5.564 0 00-2.329-4.746 8.29 8.29 0 00-5.01-1.714q-7.032 0-13.711 11.953V27.774h-2.417l-16.084 6.5.571 2.109a11.556 11.556 0 014.087-.879q2.726 0 3.494 2.923T200 49.922v20.611a24.844 24.844 0 01-.5 6.372 4.545 4.545 0 01-2.505 2.483 12.152 12.152 0 01-5.34.988v2.11h27.2v-2.11q-5.759 0-7.515-2.57t-1.758-7.713V44.605q4.658-9.007 7.647-9.009h0zm29.882-35.6q-5.932 0-5.932 5.845 0 5.932 5.932 5.933 5.844 0 5.845-5.933 0-5.844-5.845-5.845h0zm12.876 80.376q-4.834 0-6.438-1.955t-1.6-7.932V27.774h-2.548l-16.04 6.5.835 2.109a11.224 11.224 0 013.911-.879 3.24 3.24 0 013.537 2.637q.637 2.637.637 11.865v20.483q0 6.021-1.6 7.954t-6.481 1.933v2.11h25.795v-2.11zm12.92 1.407a12.524 12.524 0 013.164.571 40.914 40.914 0 0011.119 1.758 18.146 18.146 0 0012.568-4.658 14.82 14.82 0 005.185-11.47q0-9.492-11.777-15.161l-8.481-4.087q-9.141-4.394-9.141-10.635a5.693 5.693 0 012.878-5.1 11.435 11.435 0 016.175-1.8q10.633 0 14.414 14.677h1.933v-18.1h-1.933q-1.1 2.2-2.637 2.2a16.489 16.489 0 01-3.955-.835 28.037 28.037 0 00-7.6-1.362 16.229 16.229 0 00-11.558 4.285 14.518 14.518 0 00-4.57 11.1 13.171 13.171 0 004.13 9.931 211.025 211.025 0 0018.589 11.031q4.967 3.78 4.966 8.569a6.916 6.916 0 01-2.812 5.933 10.3 10.3 0 01-6.241 2.065q-13.227 0-16.479-16.348h-1.934v18.941h1.934a2.284 2.284 0 012.065-1.494h0zM84.246 121.397H86.3v-12.513h-2.052v5.365H78.36v-5.365h-2.053v12.513h2.053v-5.473h5.888v5.473zm18.594 0H105l-4.483-12.528H98.14L93.657 121.4H95.8l.9-2.556h5.239zm-1.477-4.231h-4.087l2.053-5.816zm10.978 4.231h2.053v-12.513h-2.053v12.513zm16.8-8.768a2.02 2.02 0 01-2.323 2.124h-2.269v-4.195h2.269c1.599 0 2.319.811 2.319 2.071zm-6.644-3.745v12.513h2.052v-5h1.567l2.881 5h2.448l-3.1-5.185a3.562 3.562 0 002.9-3.583c0-2.035-1.458-3.745-4.429-3.745h-4.321zm35.3 8.966c0-4.573-6.626-2.808-6.626-5.635a1.776 1.776 0 012.103-1.746 1.957 1.957 0 012.106 1.657h2.269c-.18-2.143-1.873-3.4-4.267-3.4-2.557 0-4.3 1.368-4.3 3.565 0 4.609 6.644 2.647 6.644 5.671 0 1.063-.81 1.837-2.25 1.837a2.008 2.008 0 01-2.233-1.855h-2.2c0 2.215 1.927 3.584 4.43 3.584 2.79-.004 4.32-1.805 4.32-3.678zm16.272 3.547h2.16l-4.487-12.528h-2.377l-4.483 12.531h2.143l.9-2.556h5.239zm-1.477-4.231H168.5l2.053-5.816zm10.978-8.282v12.513h6.284v-1.656h-4.231v-10.857h-2.053zm25.491 6.23a6.392 6.392 0 10-6.391 6.41 6.237 6.237 0 006.387-6.41zm-10.677 0c0-2.827 1.8-4.592 4.286-4.592s4.285 1.765 4.285 4.592-1.8 4.627-4.285 4.627-4.29-1.801-4.29-4.627zm26.316-6.245v9.327l-6.176-9.327h-2.054V121.4h2.052v-9.344l6.176 9.344h2.053v-12.531H224.7z"
-					/>
-				</svg>
+				<div class="logo-wrap">
+					<svg
+						class="loading-text"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 500 500"
+						preserveAspectRatio="none"
+					>
+						<path
+							d="M72.927,287.75H87.808c7.3,0,12-2.64,12-9.313,0-5.664-4.032-8.161-8.689-8.785v-0.1c4.512-.912,7.153-3.7,7.153-7.392a6.711,6.711,0,0,0-2.976-5.9c-1.872-1.248-4.656-1.728-8.5-1.728H72.927v1.392c4.224,0.288,4.32.384,4.32,3.073v24.29c0,2.688-.1,2.784-4.32,3.072v1.392ZM82,282.374V270.709h3.456c5.953,0,9.217,2.976,9.217,8.064,0,5.761-3.936,7.3-8.065,7.3C82.767,286.07,82,285.35,82,282.374Zm0-13.346V258.611c0-2.064.144-2.4,3.888-2.4,3.5,0,7.345,1.3,7.345,6.241,0,4.7-3.024,6.576-8.017,6.576H82Z"
+						/>
+						<path
+							d="M112.95,287.75h12.674v-1.392c-4.273-.24-4.561-0.336-4.561-2.784V272.341c0-3.7,1.632-4.945,2.736-4.945a6.3,6.3,0,0,1,2.977,1.056,2.011,2.011,0,0,0,.96.24A2.529,2.529,0,0,0,129.944,266a2.313,2.313,0,0,0-2.544-2.352c-1.728,0-3.169,1.056-6.337,3.84l-0.576-3.84-7.3,1.2v1.2l1.825,0.24c1.248,0.192,1.536.432,1.536,2.16v15.122c0,2.448-.24,2.544-3.6,2.784v1.392Z"
+						/>
+						<path
+							d="M144.183,256.355a2.928,2.928,0,1,0,2.928-2.928A2.8,2.8,0,0,0,144.183,256.355ZM141.3,287.75h11.714v-1.392c-3.409-.24-3.6-0.336-3.6-2.784V263.94l-0.336-.288-7.536,1.2v1.2l1.824,0.24c1.248,0.192,1.536.432,1.536,2.16v15.122c0,2.448-.144,2.544-3.6,2.784v1.392Z"
+						/>
+						<path
+							d="M165.543,278.733l0.48,6.289c1.728,1.536,4.656,2.3,7.488,2.3,5.713,0,8.977-3.024,8.977-7.105,0-4.224-2.592-6.144-7.537-7.68-1.968-.624-5.136-1.632-5.136-4.321,0-2.5,1.92-3.888,4.32-3.888,3.409,0,5.041,2.64,5.377,5.569H180.9v-5.617a11.069,11.069,0,0,0-6.193-1.632c-5.184,0-8.736,2.448-8.736,7.009,0,3.984,3.264,5.76,7.248,6.96,2.16,0.672,5.185,1.776,5.185,5.041,0,2.448-1.92,3.984-4.465,3.984-3.888,0-6.048-2.832-7.008-6.913h-1.392Z"
+						/>
+						<path
+							d="M196.767,276.181c0,7.585,3.264,12.145,11.088,12.145,5.329,0,8.065-2.976,9.361-6.769l-1.44-.768c-1.344,2.785-3.168,5.089-6.96,5.089-5.953,0-7.153-5.761-7.057-10.753h13.825c1.008,0,1.92-.24,1.92-1.824,0-2.832-.912-9.649-9.7-9.649C200.319,263.652,196.767,268.98,196.767,276.181Zm5.04-2.88c0-1.968.72-7.969,5.712-7.969,4.465,0,4.993,4.56,4.993,6.433,0,0.912-.288,1.536-1.632,1.536h-9.073Z"
+						/>
+						<path
+							d="M250.734,287.75h14.978c14.737,0,18.433-8.593,18.433-17.185,0-7.873-3.5-16.034-17.473-16.034H250.734v1.392c4.225,0.288,4.321.384,4.321,3.073v24.29c0,2.688-.1,2.784-4.321,3.072v1.392Zm9.073-6v-22.8c0-2.5.432-2.737,5.569-2.737,10.176,0,13.393,6.433,13.393,14.546,0,12.1-5.905,15.313-13.969,15.313C260.623,286.07,259.807,285.542,259.807,281.749Z"
+						/>
+						<path
+							d="M297.255,274.989c0,7.777,3.792,12.337,11.521,12.337s11.521-4.56,11.521-12.337-3.793-12.337-11.521-12.337S297.255,267.212,297.255,274.989Zm4.992,0c0-6.625,2.112-10.657,6.529-10.657s6.528,4.032,6.528,10.657-2.112,10.657-6.528,10.657S302.247,281.614,302.247,274.989Z"
+						/>
+						<path
+							d="M333.455,265.052l1.824,0.24c1.248,0.192,1.536.432,1.536,2.16v12.673c0,5.521,3.264,7.2,6.817,7.2,4.08,0,7.392-2.784,8.784-3.456l0.48,2.88h7.681v-1.392c-3.312-.24-3.6-0.336-3.6-2.784V262.94l-0.336-.288-7.537,1.2v1.2l1.824,0.24c1.248,0.192,1.536.432,1.536,2.16v10.8a7.712,7.712,0,0,1-.384,2.881,6.6,6.6,0,0,1-5.9,3.6c-2.784,0-4.849-1.728-4.849-5.473V262.94l-0.336-.288-7.536,1.2v1.2Z"
+						/>
+						<path
+							d="M374.2,276.229c0,8.017,3.936,12.1,11.137,12.1a9.255,9.255,0,0,0,9.216-6.913l-1.392-.672c-1.488,3.361-3.408,5.089-6.912,5.089-5.713,0-7.057-5.953-7.057-10.465,0-7.153,2.832-10.033,6.145-10.033,2.208,0,3.6,1.584,4.56,4.176a1.457,1.457,0,0,0,1.488,1.249c0.96,0,2.832-.625,2.832-2.449,0-2.208-3.168-4.656-8.352-4.656C377.127,263.652,374.2,269.844,374.2,276.229Z"
+						/>
+						<path
+							d="M406.767,276.181c0,7.585,3.264,12.145,11.088,12.145,5.329,0,8.065-2.976,9.361-6.769l-1.44-.768c-1.344,2.785-3.168,5.089-6.96,5.089-5.953,0-7.153-5.761-7.057-10.753h13.825c1.008,0,1.92-.24,1.92-1.824,0-2.832-.912-9.649-9.7-9.649C410.319,263.652,406.767,268.98,406.767,276.181Zm5.04-2.88c0-1.968.72-7.969,5.712-7.969,4.465,0,4.993,4.56,4.993,6.433,0,0.912-.288,1.536-1.632,1.536h-9.073Z"
+						/>
+					</svg>
+				</div>
+				<div id="bubbles" class="bubbles"></div>
 			</div>
 		</div>
-		<div id="wrapper">
+		<div class="wrapper">
 			<header id="header">
 				<div class="inner h-inner">
-					<h1 class="logo"><img src="img/logo.svg" alt="" /></h1>
+					<h1 class="logo"><img src="img/logo-txt.svg" alt="Brise Douce" /></h1>
 					<div class="right-block">
-						<div class="reserve sp-only">
-							<a href="">
-								<div class="calender-icon">
-									<img src="img/calendar.svg" alt="" />
-								</div>
-								<p class="en">RESERVE</p>
-							</a>
+						<div class="ec-btn sp-only">
+							<a href="" class="en xs">ONLINE SHOP</a>
 						</div>
 						<nav class="global-nav">
 							<div class="nav-inner">
 								<ul class="global-nav__list" id="indexList">
-									<li class="global-nav__item">
-										<a href="#concept" data-scroll>
-											<p class="en">CONCEPT</p>
-										</a>
+									<li>
+										<a href="#concept" data-scroll class="en pc-hover"
+											>CONCEPT</a
+										>
 									</li>
-									<li class="global-nav__item">
-										<a href="#menu" data-scroll>
-											<p class="en">MENU</p>
-										</a>
+									<li>
+										<a href="#menu" data-scroll class="en pc-hover">MENU</a>
 									</li>
-									<li class="global-nav__item">
-										<a href="#access" data-scroll>
-											<p class="en">ACCESS</p>
-										</a>
+									<li>
+										<a href="#chef" data-scroll class="en pc-hover">CHEF</a>
 									</li>
-									<li class="global-nav__item">
-										<a href="#style" data-scroll>
-											<p class="en">STYLE</p>
-										</a>
+									<li>
+										<a href="#access" data-scroll class="en pc-hover">ACCESS</a>
 									</li>
-									<li class="global-nav__item">
-										<a href="#staff" data-scroll>
-											<p class="en">STAFF</p>
-										</a>
-									</li>
-									<li class="global-nav__item">
-										<a href="#blog" data-scroll>
-											<p class="en">BLOG</p>
-										</a>
-									</li>
-									<li class="global-nav__item pc-only">
-										<a href="">
-											<div class="calender-icon">
-												<img src="img/calendar.svg" alt="" />
-											</div>
-											<p class="en">RESERVE</p>
-										</a>
+									<li class="pc-only pc-ec">
+										<a href="" class="en pc-hover">ONLINE SHOP</a>
 									</li>
 								</ul>
 								<div class="sns-block sp-only">
 									<p class="en">Follow us!</p>
 									<ul>
 										<li>
-											<a href=""><img src="img/twitter.svg" alt="" /></a>
+											<a href=""><img src="img/twitter.svg" alt="twitter" /></a>
 										</li>
 										<li>
-											<a href=""><img src="img/instagram.svg" alt="" /></a>
+											<a href=""
+												><img src="img/instagram.svg" alt="instagram"
+											/></a>
 										</li>
 									</ul>
 								</div>
 								<div class="tel-block sp-only">
-									<a href="0451234567" class="tel-btn">TEL:045-123-4567</a>
-									<p class="xs">月・水～金(10:00～22:00)</p>
-									<p class="xs">土日祝(9:00～19:00)</p>
+									<a href="0001234567" class="tel-btn small en"
+										>TEL:000-123-4567</a
+									>
+									<p class="xs">(受付時間:11:00~22:00まで)</p>
 								</div>
 							</div>
 						</nav>
@@ -126,313 +194,413 @@
 			<main class="main">
 				<div id="mainVisual">
 					<div class="inner">
-						<div class="slideshow crystal-clear">
-							<div class="bgImg slide1"></div>
-							<div class="bgImg slide2"></div>
-							<div class="bgImg slide3"></div>
+						<div class="slideshow">
+							<div class="swiper-container mv-slide">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img
+											srcset="img/slide01_sp.jpg 800w, img/slide01_pc.jpg 1536w"
+											sizes="(max-width: 600px) 90vw, 80vw"
+											src="img/slide01_pc.jpg"
+											alt="卵ガレット"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											srcset="img/slide02_sp.jpg 800w, img/slide02_pc.jpg 1536w"
+											sizes="(max-width: 600px) 90vw, 80vw"
+											src="img/slide02_pc.jpg"
+											alt="ベリーガレット"
+										/>
+									</div>
+								</div>
+							</div>
+							<div class="catch-copy">
+								<p class="en letters">Always choose happiness</p>
+							</div>
 						</div>
-						<div class="catch-copy">
-							<p><span>私らしく、キレイの先へ</span></p>
-							<p><span class="en">Always be yourself</span></p>
-						</div>
-						<div class="scroll-down crystal-clear">
+						<div class="scroll-down">
 							<div class="scroll-line"></div>
 						</div>
 					</div>
 				</div>
-				<section id="concept" class="first-img odd-section">
+				<section id="concept" class="section">
 					<div class="inner">
-						<div class="image-wrap img-anim waypoint">
-							<picture>
-								<source srcset="img/webp/concept.webp" type="image/webp" />
-								<img
-									src="img/concept.jpg"
-									alt="ヘアーサロンアザリスの店内画像"
-								/>
-							</picture>
-						</div>
 						<div class="l-box">
-							<h2 class="ttl-anim en waypoint">&mdash;CONCEPT</h2>
-							<div class="s-box">
-								<h3 class="bold">
-									確かな技術で、一人一人に合ったヘアスタイルへ導く
+							<div class="logo-area">
+								<img src="img/logo-mark.png" alt="Brise Douce" />
+							</div>
+							<div class="s-box txt-box">
+								<h2 class="ttl en">CONCEPT</h2>
+								<h3 class="jp lead">
+									国産そば粉のガレットと<br class="sp-only" />クラフトシードル
 								</h3>
 								<p>
-									アザリスヘアサロンは確かな技術と接客を追求し、徹底したカウンセリングでお客様一人ひとりにあったヘアスタイルを提案して行くことを目標にしたヘアーサロンです。
+									Brise
+									Douce(ブリーズドゥース)は、フランスのブルターニュ地方発祥のそば料理ガレットを国産原料の蕎麦粉を用いて提供致します。<br />
+									またそれに合わせて日本各地のりんごの発泡酒シードルを取り揃えています。
 								</p>
 								<p>
-									家で再現しやすいスタイリングや、長くキレイを保てるホームケアなど、その場のみでの美しさとならないご提案をいたします。
+									新たな蕎麦料理やお酒の楽しみ方を知り、沢山のお客様に幸せになってもらいたい。多くの人を幸せに出来る様な店でありたい。
 								</p>
+							</div>
+						</div>
+						<div class="concept-image s-box">
+							<ul>
+								<li class="cont-img waypoint">
+									<picture>
+										<source
+											media="(max-width: 600px)"
+											data-srcset="img/concept01_sp.jpg"
+										/>
+										<source
+											media="(min-width: 601px)"
+											data-srcset="img/concept01_pc.jpg"
+										/>
+										<img
+											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="img/concept01_pc.jpg"
+											alt="店内の様子"
+											class="lazyload"
+										/>
+									</picture>
+								</li>
+								<li class="cont-img waypoint">
+									<picture>
+										<source
+											media="(max-width: 600px)"
+											data-srcset="img/concept02_sp.jpg"
+										/>
+										<source
+											media="(min-width: 601px)"
+											data-srcset="img/concept02_pc.jpg"
+										/>
+										<img
+											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="img/concept02_pc.jpg"
+											alt="クラフトシードル"
+											class="lazyload"
+										/>
+									</picture>
+								</li>
+								<li class="cont-img waypoint">
+									<picture>
+										<source
+											media="(max-width: 600px)"
+											data-srcset="img/concept03_sp.jpg"
+										/>
+										<source
+											media="(min-width: 601px)"
+											data-srcset="img/concept03_pc.jpg"
+										/>
+										<img
+											src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-src="img/concept03_pc.jpg"
+											alt="ガレット作り"
+											class="lazyload"
+										/>
+									</picture>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="menu" class="mca-sec">
+					<div class="inner">
+						<h2 class="en ttl">MENU</h2>
+						<div class="l-box">
+							<div class="menu-img s-box">
+								<ul>
+									<li class="cont-img waypoint">
+										<picture>
+											<source
+												media="(max-width: 600px)"
+												srcset="img/menu01_sp.jpg"
+											/>
+											<source
+												media="(min-width: 601px)"
+												srcset="img/menu01_pc.jpg"
+											/>
+											<img
+												src="img/menu01_pc.jpg"
+												alt="ガレットとシードル"
+												decoding="async"
+											/>
+										</picture>
+									</li>
+									<li class="cont-img waypoint">
+										<picture>
+											<source
+												media="(max-width: 600px)"
+												srcset="img/menu02_sp.jpg"
+											/>
+											<source
+												media="(min-width: 601px)"
+												srcset="img/menu02_pc.jpg"
+											/>
+											<img
+												src="img/menu02_pc.jpg"
+												alt="デザートガレットのほうじ茶ガレット"
+												decoding="async"
+											/>
+										</picture>
+									</li>
+								</ul>
+							</div>
+							<div class="s-box menu-list">
+								<div class="swiper-container tab-menu">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide en">Lunch</div>
+										<div class="swiper-slide en">Dinner</div>
+										<div class="swiper-slide en">Takeout</div>
+									</div>
+								</div>
+								<div class="swiper-container tab-contents">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="ss-inner">
+												<h4 class="menu-name">
+													平日限定ランチ<span class="yen">&yen;1,000~</span>
+												</h4>
+												<ul>
+													<li>
+														お飲み物<br /><span class="xs"
+															>(シードル・りんごジュース・そば茶から1点)</span
+														>
+													</li>
+													<li>サラダ</li>
+													<li>
+														ガレット<br /><span class="xs"
+															>(平日限定ランチメニューからお好きなガレット1点)</span
+														>
+													</li>
+												</ul>
+												<h4 class="menu-name">
+													ランチ<span class="yen">&yen;2,480</span>
+												</h4>
+												<ul>
+													<li>
+														お飲み物<br /><span class="xs"
+															>(シードル・りんごジュース・そば茶から1点)</span
+														>
+													</li>
+													<li>
+														前菜<br /><span class="xs"
+															>(ランチメニューから1点)</span
+														>
+													</li>
+													<li>
+														お食事ガレット<br /><span class="xs"
+															>(メニューからお好きなガレット1点)</span
+														>
+													</li>
+													<li>
+														デザートガレット<br /><span class="xs"
+															>(メニューからお好きなガレット1点)</span
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ss-inner">
+												<h4 class="menu-name">
+													前菜<span class="yen">&yen;480~</span>
+												</h4>
+												<ul>
+													<li>蕎麦チップスとそば味噌</li>
+													<li>シードルヴィネガーで漬けたピクルス</li>
+													<li>3色野菜のテリーヌ</li>
+													<li>カルパッチョ</li>
+													<li>鴨ロースのたたき</li>
+													<li>お肉の盛り合わせ</li>
+												</ul>
+												<h4 class="menu-name">
+													お食事ガレット<span class="yen">&yen;1,000~</span>
+												</h4>
+												<ul>
+													<li>海藻バター</li>
+													<li>卵、チーズ、ハム</li>
+													<li>サーモン、卵、チーズ、生クリーム</li>
+													<li>豚バラ肉、卵、チーズetc…</li>
+												</ul>
+												<h4 class="menu-name">
+													デザートガレット<span class="yen">&yen;550~</span>
+												</h4>
+												<ul>
+													<li>北海道発酵バターガレット</li>
+													<li>林檎の塩バターキャラメルガレット</li>
+													<li>ストロベリーとフランボワーズガレット</li>
+													<li>チョコバナナガレット</li>
+													<li>ほうじ茶ガレット</li>
+													<li>きな粉と黒蜜と抹茶アイスのガレット</li>
+												</ul>
+												<h4>
+													おまかせコース料理<span class="yen">&yen;3,500</span>
+												</h4>
+												<p class="small">
+													人気メニュー料理8品を少しずつお楽しみ頂けます。<br />
+													※お2人様より承ります。
+												</p>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="ss-inner">
+												<p class="small">
+													お電話にて承っております。<br />
+													事前にご注文頂ければ待ち時間短縮でお渡し出来ます。
+												</p>
+												<p class="tab-tel">TEL:000-123-4567</p>
+												<h4 class="menu-name">
+													国産クラフトシードル<span class="yen">&yen;800~</span>
+												</h4>
+												<h4 class="menu-name">
+													国産リンゴジュース<span class="yen">&yen;500~</span>
+												</h4>
+												<h4 class="menu-name">
+													前菜・おつまみ盛り合わせ<span class="yen"
+														>&yen;1,500</span
+													>
+												</h4>
+												<h4 class="menu-name">お食事ガレット</h4>
+												<ul>
+													<li>
+														卵、チーズ、ハム<span class="yen">&yen;1,100</span>
+													</li>
+													<li>
+														卵、チーズ、ハム、シイタケ<span class="yen"
+															>&yen;1,300</span
+														>
+													</li>
+													<li>
+														サーモン、卵、チーズ、生クリーム<span class="yen"
+															>&yen;1,300</span
+														>
+													</li>
+													<li>
+														豚バラ肉、卵、チーズetc…<span class="yen"
+															>&yen;1,500</span
+														>
+													</li>
+												</ul>
+												<h4 class="menu-name">デザートガレット</h4>
+												<ul>
+													<li>
+														北海道発酵バター<span class="yen">&yen;600</span>
+													</li>
+													<li>
+														林檎の塩バターキャラメル<span class="yen"
+															>&yen;600</span
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="s-box">
+								<p class="txt-c small">
+									オンラインショップでもクラフトシードルを販売しています。お家でも是非お楽しみください。
+								</p>
+								<a href="" class="btn pc-hover small"
+									><span>Online Shop</span></a
+								>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section id="menu" class="first-img even-section">
+				<section id="chef" class="section simple-sec mca-sec">
 					<div class="inner">
-						<div class="image-wrap img-anim waypoint">
-							<picture>
-								<source srcset="img/webp/menu.webp" type="image/webp" />
-								<img src="img/menu.jpg" alt="美容師が髪をカットしている画像" />
-							</picture>
-						</div>
+						<h2 class="en ttl">CHEF</h2>
 						<div class="l-box">
-							<h2 class="ttl-anim en waypoint">&mdash;MENU</h2>
-							<div class="s-box">
-								<p class="text-block">
-									トレンドやニーズを常に研究し、お客様一人ひとりに寄り添った最善のスタイルを実現いたします。
-								</p>
+							<div class="img-box s-box cont-img waypoint">
+								<picture>
+									<source type="image/webp" data-srcset="img/chef.webp" />
+									<img
+										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+										data-src="img/chef.jpg"
+										alt="シェフの紹介"
+										class="lazyload"
+									/>
+								</picture>
 							</div>
-							<div class="s-box">
-								<dl>
+							<div class="s-box txt-box">
+								<dl class="name">
+									<dt>石原夏樹</dt>
+									<dd>Natsuki Ishihara</dd>
+								</dl>
+								<div class="chef-intro">
+									<p class="small">
+										横浜出身。専門学校卒業後、都内フランス料理店で修業後、渡仏。フランスの1つ星レストラン等で5年ほど研鑽を積み、現地で触れたフランス料理という文化に改めて感激する。特に蕎麦文化に感激し、帰国後,都内蕎麦店で修業し、蕎麦料理を学ぶ。1年後、地元横浜にBrise
+										Douceを開く。
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="access" class="section simple-sec mca-sec">
+					<div class="inner">
+						<h2 class="en ttl">ACCESS</h2>
+						<div class="l-box">
+							<div class="img-box s-box cont-img waypoint">
+								<picture>
+									<source type="image/webp" data-srcset="img/access.webp" />
+									<img
+										src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+										data-src="img/access.jpg"
+										alt="お店外観"
+										class="lazyload"
+									/>
+								</picture>
+							</div>
+							<div class="s-box txt-box">
+								<dl class="flx-def small">
 									<div class="line">
-										<dt>カット</dt>
-										<dd>&yen;4,400(tax in)</dd>
+										<dt>ADDRESS</dt>
+										<dd>神奈川県横浜市東区本町1-2-3 A・Bビル1F</dd>
 									</div>
 									<div class="line">
-										<dt>カラー</dt>
-										<dd>&yen;6,600(tax in)~</dd>
+										<dt>TEL</dt>
+										<dd>000-123-4567</dd>
 									</div>
 									<div class="line">
-										<dt>パーマ</dt>
-										<dd>&yen;5,500(tax in)~</dd>
+										<dt>TRAIN</dt>
+										<dd>みなとみらい線馬車道駅より徒歩5分</dd>
 									</div>
 									<div class="line">
-										<dt>トリートメント</dt>
-										<dd>&yen;3,300(tax in)~</dd>
+										<dt>LUNCH</dt>
+										<dd>11:00～16:30(L.O. 16:00)</dd>
+									</div>
+									<div class="line">
+										<dt>DINNER</dt>
+										<dd>17:00～22:00(L.O. 21:00)</dd>
+									</div>
+									<div class="line">
+										<dt>CLOSED</dt>
+										<dd>
+											不定休(詳細は<a href="">Twitter</a>と<a href=""
+												>Instagram</a
+											>にてお知らせします。)
+										</dd>
 									</div>
 								</dl>
 							</div>
-							<div class="s-box">
-								<p class="small">詳細は、下記へ。</p>
-								<a href="" class="btn pc-hover"
-									>HOT PEPPER<img
-										src="img/ex_link.svg"
-										class="icon-link"
-										alt=""
-								/></a>
-							</div>
 						</div>
-					</div>
-				</section>
-				<section id="access" class="first-img odd-section">
-					<div class="inner">
-						<div class="pc-box">
-							<div class="image-wrap img-anim waypoint">
-								<picture>
-									<source srcset="img/webp/access.webp" type="image/webp" />
-									<img
-										src="img/access.jpg"
-										alt="ヘアーサロンアザリスの外観画像"
-									/>
-								</picture>
-							</div>
-							<div class="l-box">
-								<h2 class="ttl-anim en waypoint">&mdash;ACCESS</h2>
-								<div class="s-box">
-									<dl>
-										<div class="line">
-											<dt>住所</dt>
-											<dd>横浜市港北区大倉山1-2-3 A・Bビル2F</dd>
-										</div>
-										<div class="line">
-											<dt>電話</dt>
-											<dd>045-123-4567</dd>
-										</div>
-										<div class="line">
-											<dt>営業時間</dt>
-											<dd>
-												平日 10:00～22:00<br />(最終受付
-												カット21:00/カラーorパーマ20:00)
-											</dd>
-											<dd>
-												土日祝 9:00～19:00<br />(最終受付
-												カット18:00/カラーorパーマ17:00)
-											</dd>
-										</div>
-										<div class="line">
-											<dt>定休日</dt>
-											<dd>火曜日</dd>
-										</div>
-									</dl>
-								</div>
-								<div class="s-box">
-									<p class="small">東急東横線大倉山駅より徒歩2分</p>
-								</div>
-								<div class="s-box">
-									<a href="" class="btn pc-hover"
-										>Google Map<img
-											src="img/ex_link.svg"
-											class="icon-link"
-											alt=""
-									/></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section id="style" class="first-img grey">
-					<div class="inner">
-						<div class="hair-style">
-							<div class="left-wrap img-anim waypoint">
-								<picture>
-									<source srcset="img/webp/style01.webp" type="image/webp" />
-									<img
-										src="img/style01.jpg"
-										alt="ミディアム、パーマ、ウェーブの女性"
-									/>
-								</picture>
-							</div>
-							<div class="right-wrap img-anim waypoint">
-								<picture>
-									<source srcset="img/webp/style02.webp" type="image/webp" />
-									<img src="img/style02.jpg" alt="ショートボブの女性" />
-								</picture>
-							</div>
-						</div>
-						<div class="l-box">
-							<h2 class="ttl-anim en waypoint">&mdash;STYLE</h2>
-							<div class="s-box">
-								<p>
-									オススメのヘアスタイルをインスタに載せています。是非、参考にしてください。
-								</p>
-								<a href="" class="btn pc-hover"
-									>Instagram<img src="img/ex_link.svg" class="icon-link" alt=""
-								/></a>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section id="staff" class="grey">
-					<div class="inner">
-						<div class="l-box">
-							<h2 class="ttl-anim en waypoint">&mdash;STAFF</h2>
-							<div class="s-box">
-								<p class="text-block">
-									徹底したカウンセリングと、骨格から身長のバランスを考えたスタイリング技術によってイメージを形にいたします。
-								</p>
-							</div>
-							<div class="s-box">
-								<ul>
-									<li class="cont-img waypoint">
-										<div class="staff-intro">
-											<picture>
-												<source
-													srcset="img/webp/staff01.webp"
-													type="image/webp"
-												/>
-												<img src="img/staff01.jpg" alt="" />
-											</picture>
-											<div class="name">
-												<p class="en small">Shou Tooyama</p>
-												<p class="jp-name bold">遠山翔</p>
-											</div>
-											<div class="vertical">
-												<p class="en xs">Owner, Director</p>
-											</div>
-										</div>
-									</li>
-									<li class="cont-img waypoint">
-										<div class="staff-intro">
-											<picture>
-												<source
-													srcset="img/webp/staff02.webp"
-													type="image/webp"
-												/>
-												<img src="img/staff02.jpg" alt="" />
-											</picture>
-											<div class="name">
-												<p class="en small">Takuma Suzuki</p>
-												<p class="jp-name bold">鈴木琢磨</p>
-											</div>
-											<div class="vertical">
-												<p class="en xs">Director</p>
-											</div>
-										</div>
-									</li>
-									<li class="cont-img waypoint">
-										<div class="staff-intro">
-											<picture>
-												<source
-													srcset="img/webp/staff03.webp"
-													type="image/webp"
-												/>
-												<img src="img/staff03.jpg" alt="" />
-											</picture>
-											<div class="name">
-												<p class="en small">Haruka Kohinata</p>
-												<p class="jp-name bold">小日向遥</p>
-											</div>
-											<div class="vertical">
-												<p class="en xs">Stylist</p>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section id="blog" class="contents grey">
-					<div class="inner">
-						<div class="l-box">
-							<h2 class="ttl-anim en waypoint">&mdash;BLOG</h2>
-							<div class="s-box">
-								<ul>
-									<li class="cont-img waypoint">
-										<div class="blog-block">
-											<a href="" class="pc-hover">
-												<picture>
-													<source
-														srcset="img/webp/blog01.webp"
-														type="image/webp"
-													/>
-													<img src="img/blog01.jpg" alt="" />
-												</picture>
-											</a>
-											<div class="name">
-												<p class="xs">2020.10.07</p>
-												<p class="small">髪を痛ませないヘアアイロンの使い方</p>
-											</div>
-										</div>
-									</li>
-									<li class="cont-img waypoint">
-										<div class="blog-block">
-											<a href="" class="pc-hover">
-												<picture>
-													<source
-														srcset="img/webp/blog02.webp"
-														type="image/webp"
-													/>
-													<img src="img/blog02.jpg" alt="" />
-												</picture>
-											</a>
-											<div class="name">
-												<p class="xs">2020.10.02</p>
-												<p class="small">ヘアアレンジ</p>
-											</div>
-										</div>
-									</li>
-									<li class="cont-img waypoint">
-										<div class="blog-block">
-											<a href="" class="pc-hover">
-												<picture>
-													<source
-														srcset="img/webp/blog03.webp"
-														type="image/webp"
-													/>
-													<img src="img/blog03.jpg" alt="" />
-												</picture>
-											</a>
-											<div class="name">
-												<p class="xs">2020.09.24</p>
-												<p class="small">10月のお知らせ</p>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<div class="s-box">
-								<a href="" class="btn pc-hover"><span>View more</span></a>
+						<div id="map" class="s-box">
+							<div class="map-inner">
+								<iframe
+									class="lazyload"
+									data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4036.3564899441917!2d139.63801175163962!3d35.44845248680495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2a061a8d96cddf9!2z6aas6LuK6YGT6aeF!5e0!3m2!1sja!2sjp!4v1613398368678!5m2!1sja!2sjp"
+									width="600"
+									height="450"
+									frameborder="0"
+									style="border: 0"
+									allowfullscreen=""
+									aria-hidden="false"
+									tabindex="0"
+								></iframe>
 							</div>
 						</div>
 					</div>
@@ -441,30 +609,26 @@
 			<footer>
 				<div class="inner">
 					<div class="l-box">
-						<div class="s-box">
+						<div class="f-logo">
 							<div class="logo">
-								<img src="img/logo-white.svg" class="desvg" alt="" />
+								<img src="img/logo-txt-footer.svg" alt="" />
 							</div>
 						</div>
-						<div class="s-box" id="f-sns">
-							<ul>
-								<li>
-									<a href="" class="pc-hover"
-										><img src="img/twitter-white.svg" alt=""
-									/></a>
-								</li>
-								<li>
-									<a href="" class="pc-hover"
-										><img src="img/instagram-white.svg" alt=""
-									/></a>
-								</li>
-							</ul>
-						</div>
-						<div class="s-box">
-							<p class="copyright">
-								&copy;Hair Salon Azaris All Rights Reserved.
-							</p>
-						</div>
+						<ul class="f-sns">
+							<li>
+								<a href="" class="pc-hover"
+									><img src="img/twitter-white.svg" alt=""
+								/></a>
+							</li>
+							<li>
+								<a href="" class="pc-hover"
+									><img src="img/instagram-white.svg" alt=""
+								/></a>
+							</li>
+						</ul>
+						<p class="en xs copyright">
+							&copy;Brise Douce All Rights Reserved.
+						</p>
 					</div>
 					<a href="#top" id="btn-backtotop" class="pc-hover"
 						><span class="arrow_up"></span
@@ -472,5 +636,6 @@
 				</div>
 			</footer>
 		</div>
+		<!-- wrapper -->
 	</body>
 </html>
